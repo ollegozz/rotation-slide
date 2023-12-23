@@ -55,11 +55,13 @@ img {
 .slide {   
     height: 100vh;
     width: 100vw;
+    background: linear-gradient(0deg, #F0F0F0 0.16%, rgba(246, 246, 246, 0.50) 45.42%, rgba(217, 217, 217, 0.00) 90.68%);
+    /* max-width: 100vw; */
      
 }
 
 .content {
-    background: linear-gradient(0deg, #F0F0F0 0.16%, rgba(246, 246, 246, 0.50) 45.42%, rgba(217, 217, 217, 0.00) 90.68%);    max-width: 100vw;
+    /* background: linear-gradient(0deg, #F0F0F0 0.16%, rgba(246, 246, 246, 0.50) 45.42%, rgba(217, 217, 217, 0.00) 90.68%);    max-width: 100vw; */
 }
 
 .subtitle {
@@ -83,18 +85,57 @@ img {
 @media screen and (min-width: 2048px) {
     .subtitle {
         font-size: 32px;
-        padding: 40px 0 35px 0;
+        padding: 35px 0 30px 0;
     }
     .title {
         font-size: 64px;
-        padding-top: 35px;
+        padding-top: 30px;
     }
 }
 
 
 
 
+.animation {
+    max-height: 100vh;
+    position: relative;
+}
 
+.animation__content {
+    display: flex;
+    justify-content: center;
+}
+
+.animation__content_fon {
+    position: absolute;
+}
+
+.animation__content_protein {
+   right: 0;
+}
+
+.animation__content_protein img{
+    width: 90%;  
+    
+}
+
+
+.animation__content_probio {
+    
+}
+
+.animation__content_probio img {
+    width: 90%;
+}
+
+
+.animation__content_microel {
+
+}
+
+.animation__content_microel img{
+    width: 90%;
+}
 
 
 
@@ -115,7 +156,7 @@ img {
 
 .text {
     position: absolute;
-    bottom: 12%;
+    bottom: 10%;
     left: 2%;
     align-items: center;
     max-width: 60vw;
@@ -127,7 +168,7 @@ img {
     border: 3px solid white;
     border-radius: 30px 50px;
     box-shadow: 8px 8px 21px rgba(0, 0, 0, 0.33);
-    max-width: 60%;
+    max-width: 70%;
     padding: 20px;
     margin-bottom: 15px;
 }
@@ -145,7 +186,6 @@ img {
     letter-spacing: -0.8px;
     border-radius: 20px 35px;
     background: radial-gradient(1033.22% 127.83% at 32.56% 24.17%, #CBA543 0%, #D9B14A 35.42%, #B89B36 100%);
-    /* flex-basis: 80%; */
 }
 
 .text__block1_white {
@@ -154,7 +194,7 @@ img {
     font-weight: 700;
     line-height: 40px;
     letter-spacing: -1.12px;
-    flex-basis: 40%;
+    flex-basis: 60%;
 }
 
 .text__block1_white hr {
@@ -207,7 +247,7 @@ img {
     .text__block {
         padding: 7px;
         max-height: 100px;
-        max-width: 40%;
+        max-width: 45%;
     }
     .text__block_yeloow {
         line-height: 20px;
