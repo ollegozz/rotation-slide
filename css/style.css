@@ -97,26 +97,34 @@ img {
 
 
 .animation {
-    max-height: 100vh;
-    position: relative;
-}
-
-.animation__content {
-    display: flex;
-    justify-content: center;
+    max-height: 100vh;  
+    
 }
 
 .animation__content_fon {
+
+}
+
+.animation__content_circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* .animation__content_circle img {
     position: absolute;
 }
 
+
 .animation__content_protein {
-   right: 0;
+   
 }
 
 .animation__content_protein img{
-    width: 90%;  
-    
+    top: 30%;
+    left: 60%;
+    height: 40%;    
 }
 
 
@@ -125,21 +133,94 @@ img {
 }
 
 .animation__content_probio img {
-    width: 90%;
+    top: 25%;
+    left: 15%;
 }
 
 
 .animation__content_microel {
-
+    
 }
 
 .animation__content_microel img{
-    width: 90%;
+    top: 10%;
+    left: 55%;
+} */
+
+
+/* =-=================== */
+
+
+.circle {
+    margin: 0 auto;
+}
+
+.circle1,
+.circle2,
+.circle3 {
+    transition: all 0.6s ease;
+    position: absolute;
+    margin: 8%;
+    transform: rotateX(-90deg) translateZ(40%) rotate(180deg);
+    /* transform: rotateX(-90deg) translateZ(100px) rotate(180deg); */
+}
+
+
+@keyframes Orbita {
+    from {
+        transform: rotate(0deg) translateX(300px) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(300px) rotate(-360deg);
+    }
+}
+
+@keyframes Orbita2 {
+    from {
+        transform: rotate(180deg) translateX(150px) rotate(180deg);
+    }
+
+    to {
+        transform: rotate(540deg) translateX(150px) rotate(540deg);
+    }
+}
+
+@keyframes Orbita3 {
+    from {
+        transform: rotate(0deg) translateX(250px) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(180deg) translateX(150px) rotate(180deg);
+    }
+}
+
+.orbit1 {
+    position: absolute;
+    bottom: 10%;
+    right: 0%;
+    animation: Orbita 15s linear infinite;
+}
+
+.orbit2 {
+    position: absolute;
+    left: 8%;
+    top: 15%;
+    animation: Orbita2 15s linear infinite;
+}
+
+.orbit3 {
+    position: absolute;
+    right: 20%;
+    top: 8%;
+    animation: Orbita3 15s linear infinite;
 }
 
 
 
 
+/*  */
 
 
 
