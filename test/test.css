@@ -1,87 +1,27 @@
-html {
-    height: 100%;
-}
-
-body {
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-
-    /*контент в центр страницы*/
-    margin: 0;
-    height: 100%;
+.test {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
-.circle {
-    margin: 0 auto;       
-    /* transition: all 0.6s ease; */
-}
-
-.circle1,
-.circle2,
-.circle3 {
-    /* height: 70px;
-    width: 70px; */
-    transition: all 0.6s ease;
-    position: absolute;
-    margin: 8%;
-    transform: rotateX(-90deg) translateZ(100px) rotate(180deg);
-}
-
-
-@keyframes Orbita {
-    from {
-        transform: rotate(0deg) translateX(150px) rotate(0deg);
-    }
-
+@keyframes circle {
     to {
-        transform: rotate(360deg) translateX(150px) rotate(-360deg);
+        transform: rotate(360deg);
     }
 }
 
-@keyframes Orbita2 {
-    from {
-        transform: rotate(180deg) translateX(150px) rotate(180deg);
-    }
-
+@keyframes updown {
     to {
-        transform: rotate(540deg) translateX(150px) rotate(540deg);
+        transform: translateY(500px);
     }
 }
 
-@keyframes Orbita3 {
-    from {
-        transform: rotate(0deg) translateX(150px) rotate(0deg);
-    }
-
-    to {
-        transform: rotate(180deg) translateX(150px) rotate(180deg);
-    }
+figure {
+    animation: updown 0s infinite linear;
 }
 
-.orbit1 {
-    position: absolute;
-    right: 33%;
-    animation: Orbita 15s linear infinite;
-}
-
-.orbit2 {
-    position: absolute;
-    right: 33%;
-    left: 39%;
-    top: 29%;
-    bottom: 33%;
-    animation: Orbita2 15s linear infinite;
-}
-
-.orbit3 {
-    position: absolute;
-    right: 33%;
-    left: 39%;
-    top: 29%;
-    bottom: 33%;
-    animation: Orbita3 15s linear infinite;
+div#redball {
+    width: 100px;
+    height: 50px;
+    transform-origin: center 300%;
+    animation: circle 15s linear infinite;
 }
