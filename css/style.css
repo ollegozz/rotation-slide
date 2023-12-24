@@ -161,28 +161,76 @@ img {
     transition: all 0.6s ease;
     position: absolute;
     margin: 8%;
-    transform: rotateX(-90deg) translateZ(40%) rotate(180deg);
+    transform: rotateX(-90deg) translateZ(20%) rotate(180deg);
     /* transform: rotateX(-90deg) translateZ(100px) rotate(180deg); */
 }
 
 
-@keyframes Orbita {
-    from {
-        transform: rotate(0deg) translateX(300px) rotate(0deg);
-    }
 
+@keyframes circle {
     to {
-        transform: rotate(360deg) translateX(300px) rotate(-360deg);
+        transform: rotate(1turn);
     }
 }
 
+@keyframes updown {
+    to {
+        transform: translateY(200px);
+    }
+}
+
+figure {
+    animation: updown 1s infinite ease-in-out alternate;
+}
+
+div#redball {
+    width: 100px;
+    height: 50px;
+    border-radius: 50%;
+    background: red;
+    transform-origin: center 300%;
+    animation: circle 2s infinite linear;
+}
+
+
+
+
+
+@keyframes Orbita {
+
+    /* to {
+            transform: translateX(200px);
+        }
+    } */
+
+    /* 0% {
+            transform: rotate(0deg) translateX(0%) rotate(0deg) scale(1);
+        }
+    
+    25% {
+        transform: rotate(0deg) translateX(-70%) translateY(-0%) rotate(0deg) scale(1);
+    }
+
+    50% {
+        transform: rotate(0deg) translateX(-140%) translateY(-80%) rotate(0deg) scale(0.5);
+    }
+
+    75% {
+        transform: rotate(0deg) translateX(-70%) translateY(-40%) rotate(0deg) scale(0.8);
+    }
+
+    100% {
+        transform: rotate(0deg) translateX(0%) rotate(0deg) scale(1);
+    } */
+    }
+
 @keyframes Orbita2 {
     from {
-        transform: rotate(180deg) translateX(150px) rotate(180deg);
+        transform: rotate(0deg) translateX(150px) rotate(0deg);
     }
 
     to {
-        transform: rotate(540deg) translateX(150px) rotate(540deg);
+        transform: rotate(360deg) translateX(150px) rotate(-360deg);
     }
 }
 
@@ -192,7 +240,7 @@ img {
     }
 
     to {
-        transform: rotate(180deg) translateX(150px) rotate(180deg);
+        transform: rotate(360deg) translateX(150px) rotate(-360deg);
     }
 }
 
@@ -207,14 +255,14 @@ img {
     position: absolute;
     left: 8%;
     top: 15%;
-    animation: Orbita2 15s linear infinite;
+    /* animation: Orbita2 15s linear infinite; */
 }
 
 .orbit3 {
     position: absolute;
     right: 20%;
     top: 8%;
-    animation: Orbita3 15s linear infinite;
+    /* animation: Orbita3 15s linear infinite; */
 }
 
 
