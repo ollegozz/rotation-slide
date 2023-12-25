@@ -110,9 +110,6 @@ ul {
     position: relative;
 }
 
-.cup {
-}
-
 .prot {
     width: 100%;
     position: absolute;
@@ -157,7 +154,7 @@ ul {
     }
 }
 
-@media screen and (min-width: 2048px) {
+@media screen and (max-width: 2048px) {
     .animation {
         margin-top: 4%;
     }
@@ -173,7 +170,7 @@ ul {
     }
 
     .animation__content {
-        transform: scale(1.5);
+        transform: scale(.9);
     }
 
 }
