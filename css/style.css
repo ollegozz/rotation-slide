@@ -156,37 +156,29 @@ ul {
 
 @media screen and (max-width: 2048px) {
     .animation {
-        margin-top: 4%;
-    }
-
-    .cup {
-        width: 150%;
+        margin-top: 8%;
     }
 
     .prot,
     .probio,
     .microel {
-        width: 50%;
+        width: 80%;
     }
-
-    .animation__content {
-        transform: scale(.9);
-    }
-
 }
 
 @media screen and (max-width: 1400px) {
     .animation {
-        margin-top: 3%;
+        margin-top: -5%;
     }
 
+    .cup {
+        max-width: 150%;
+    }
    
     .animation__content {
         transform: scale(.8);
     }
-
 }
-
 
 
 /*  */
