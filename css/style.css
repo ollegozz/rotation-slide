@@ -97,12 +97,30 @@ img {
 
 
 .animation {
-    max-height: 100vh;  
+    /* max-height: 100vh;   */
+    margin-top: 2%;
     
 }
 
 .animation__content_fon {
 
+}
+
+@media screen and (max-width: 1050px) {
+    .animation__content_fon img {
+        width: 60%;
+    }
+    .prot__img {
+        width: 60%;
+    }
+
+    .probio__img {
+        width: 60%;
+    }
+    .microel__img {
+        width: 60%;
+    }
+    
 }
 
 .animation__content_circle {
@@ -112,40 +130,6 @@ img {
     
 }
 
-/* .animation__content_circle img {
-    position: absolute;
-}
-
-
-.animation__content_protein {
-   
-}
-
-.animation__content_protein img{
-    top: 30%;
-    left: 60%;
-    height: 40%;    
-}
-
-
-.animation__content_probio {
-    
-}
-
-.animation__content_probio img {
-    top: 25%;
-    left: 15%;
-}
-
-
-.animation__content_microel {
-    
-}
-
-.animation__content_microel img{
-    top: 10%;
-    left: 55%;
-} */
 
 
 /* =-=================== */
@@ -154,7 +138,6 @@ img {
 .circle {
     margin: 0 auto;
 }
-
 
 @keyframes circle__prot {
     0% {
@@ -180,21 +163,22 @@ img {
         transform: rotate(360deg)
     }
     25% {
-        transform: rotate(450deg) 
+        transform: rotate(450deg) scale(0.5)
     }
     50% {
-        transform: rotate(540deg)  translateX(-30%) translateY(10%) scale(0.8)
+        transform: rotate(540deg)  translateX(-20%) scale(0.6)
     }
     75% {
-        transform: rotate(630deg)  scale(1.8) translateX(-10%) translateY(30%)
+        transform: rotate(630deg)  scale(1.5) translateX(-10%) translateY(-10%);
     }
     85% {
-            transform: rotate(680deg) scale(1.6)
+            transform: rotate(680deg) scale(1.1)
         }
     100% {
         transform: rotate(720deg)
     }
 }
+
 
 @keyframes circle__microel {
     0% {
@@ -202,14 +186,14 @@ img {
     }
 
     25% {
-        transform: rotate(450deg) scale(1.7)
+        transform: rotate(450deg) scale(1.6);
     }
 
     50% {
-        transform: rotate(540deg) scale(1.8) translateX(-30%)
+        transform: rotate(540deg) scale(1.5) translateX(-30%)
     }
     75% {
-        transform: rotate(630deg)  scale(1.8) translateX(-10%) translateY(-70%);
+        transform: rotate(630deg)  scale(1.2) translateX(-10%) translateY(-70%);
         opacity: .8
     }
 
@@ -241,6 +225,43 @@ img {
     left: 55%;
     transform-origin: bottom left;
     animation: circle__microel 10s linear infinite;
+}
+
+
+@media screen and (max-width: 1050px) {
+    .animation__content_fon img {
+        width: 60%;
+    }
+
+    .prot__img {
+        width: 50%;
+    }
+
+    .probio__img {
+        width: 50%;
+    }
+
+    .microel__img {
+        width: 50%;
+    }
+
+        .prot {
+            bottom: 30%;
+            left: 45%;
+            transform-origin: 0 -30%;
+        }
+    
+        .probio {
+            bottom: 50%;
+            left: 10%;
+            transform-origin: top right;
+        }
+    
+        .microel {
+            left: 50%;
+            transform-origin: bottom left;
+        }
+
 }
 
 /*  */
@@ -381,10 +402,6 @@ img {
         font-size: 28px;
     }
 }
-
-
-
-
 
 
 .footer {    

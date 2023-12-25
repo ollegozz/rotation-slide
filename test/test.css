@@ -1,27 +1,24 @@
-.test {
-    display: flex;
-    justify-content: center;
-}
-
 @keyframes circle {
     to {
-        transform: rotate(360deg);
+        transform: rotate(1turn);
     }
 }
 
 @keyframes updown {
     to {
-        transform: translateY(500px);
+        transform: translateX(200px);
     }
 }
 
 figure {
-    animation: updown 0s infinite linear;
+    animation: updown 1s infinite ease-in-out alternate;
 }
 
 div#redball {
     width: 100px;
     height: 50px;
+    border-radius: 50%;
+    background: red;
     transform-origin: center 300%;
-    animation: circle 15s linear infinite;
+    animation: circle 2s infinite linear;
 }
