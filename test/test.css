@@ -1,24 +1,58 @@
-@keyframes circle {
+/* .animation {
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+}
+
+.animation__content {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.prot {
+    width: 100%;
+    position: absolute;
+    right: 80%;
+    top: 5%;
+    display: inline-block;
+    offset-path: path('M1065.28 578.285C1052.58 604.28 1025.78 621.935 988.043 631.541C950.308 641.147 901.709 642.684 845.557 636.495C733.258 624.117 590.861 580.85 444.997 509.613C299.133 438.376 177.46 352.676 98.6525 271.721C59.2472 231.241 30.5792 191.969 14.9537 156.303C-0.672818 120.635 -3.22898 88.6408 9.4666 62.6455C22.1622 36.6503 48.9662 18.995 86.7039 9.38891C124.439 -0.216512 173.037 -1.75354 229.189 4.43557C341.489 16.8133 483.886 60.0802 629.749 131.317C775.613 202.554 897.287 288.254 976.094 369.209C1015.5 409.689 1044.17 448.961 1059.79 484.627C1075.42 520.295 1077.98 552.289 1065.28 578.285Z');
+    offset-rotate: 0deg;
+    animation: elipse 9s linear infinite;
+}
+
+
+.probio {
+    width: 100%;
+    position: absolute;
+    right: 80%;
+    top: 5%;
+    display: inline-block;
+    offset-path: path('M1065.28 578.285C1052.58 604.28 1025.78 621.935 988.043 631.541C950.308 641.147 901.709 642.684 845.557 636.495C733.258 624.117 590.861 580.85 444.997 509.613C299.133 438.376 177.46 352.676 98.6525 271.721C59.2472 231.241 30.5792 191.969 14.9537 156.303C-0.672818 120.635 -3.22898 88.6408 9.4666 62.6455C22.1622 36.6503 48.9662 18.995 86.7039 9.38891C124.439 -0.216512 173.037 -1.75354 229.189 4.43557C341.489 16.8133 483.886 60.0802 629.749 131.317C775.613 202.554 897.287 288.254 976.094 369.209C1015.5 409.689 1044.17 448.961 1059.79 484.627C1075.42 520.295 1077.98 552.289 1065.28 578.285Z');
+    offset-rotate: 0deg;
+    animation: elipse 9s linear infinite;
+    animation-delay: 3s;
+}
+
+.microel {
+    width: 100%;
+    position: absolute;
+    right: 80%;
+    top: 5%;
+    display: inline-block;
+    offset-path: path('M1065.28 578.285C1052.58 604.28 1025.78 621.935 988.043 631.541C950.308 641.147 901.709 642.684 845.557 636.495C733.258 624.117 590.861 580.85 444.997 509.613C299.133 438.376 177.46 352.676 98.6525 271.721C59.2472 231.241 30.5792 191.969 14.9537 156.303C-0.672818 120.635 -3.22898 88.6408 9.4666 62.6455C22.1622 36.6503 48.9662 18.995 86.7039 9.38891C124.439 -0.216512 173.037 -1.75354 229.189 4.43557C341.489 16.8133 483.886 60.0802 629.749 131.317C775.613 202.554 897.287 288.254 976.094 369.209C1015.5 409.689 1044.17 448.961 1059.79 484.627C1075.42 520.295 1077.98 552.289 1065.28 578.285Z');
+    offset-rotate: 0deg;
+    animation: elipse 9s linear infinite;
+    animation-delay: 6s;
+    opacity: .8;
+}
+
+
+@keyframes elipse {
     to {
-        transform: rotate(1turn);
+        offset-distance: 100%;
     }
-}
-
-@keyframes updown {
-    to {
-        transform: translateX(200px);
-    }
-}
-
-figure {
-    animation: updown 1s infinite ease-in-out alternate;
-}
-
-div#redball {
-    width: 100px;
-    height: 50px;
-    border-radius: 50%;
-    background: red;
-    transform-origin: center 300%;
-    animation: circle 2s infinite linear;
-}
+} */
