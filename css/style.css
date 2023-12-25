@@ -98,12 +98,12 @@ ul {
 .animation {
     display: flex;
     justify-content: center;
-    margin-top: 15%;
+    margin-top: 5%;
 }
 
 .animation__content {
-    width: 500px;
-    height: 500px;
+    max-width: 500px;
+    max-height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -111,8 +111,6 @@ ul {
 }
 
 .cup {
-    height: 200%;
-    width: 400%;
 }
 
 .prot {
@@ -157,6 +155,39 @@ ul {
     to {
         offset-distance: 100%;
     }
+}
+
+@media screen and (min-width: 2048px) {
+    .animation {
+        margin-top: 4%;
+    }
+
+    .cup {
+        width: 150%;
+    }
+
+    .prot,
+    .probio,
+    .microel {
+        width: 50%;
+    }
+
+    .animation__content {
+        transform: scale(1.5);
+    }
+
+}
+
+@media screen and (max-width: 1400px) {
+    .animation {
+        margin-top: 3%;
+    }
+
+   
+    .animation__content {
+        transform: scale(.8);
+    }
+
 }
 
 
